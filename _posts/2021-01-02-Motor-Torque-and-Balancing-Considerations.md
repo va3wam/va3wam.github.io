@@ -80,7 +80,7 @@ We wanted to understand how much torque our motors can exert, in practical terms
 
 In the static torque measurement, the rod is initially positioned horizontally. When the motor is started, it must immediately lift the full weight of the washer load against the force of gravity. We’ve done one test in this configuration. It used a ‘speed’ of 500, and was able to lift 96.2 grams.
 
-PUT IMAGE HERE
+![Twipi Torque Measurement Setup](/assets/images/torque-measure1.jpg) 
 
 In the dynamic measurement, the rod is initially positioned vertically. When the motor is started, the motion of the suspension point is almost horizontal, with almost no load due to the washers. As the rod rotates, the effective load increases, and when it’s horizontal, the full weight is being lifted. We’ve done one test in this configuration, again at speed 500. The maximum load that could be lifted to the point where the rod was again vertical was 206.2 g.
 
