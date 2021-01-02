@@ -1,4 +1,19 @@
-Motor Torque and Balancing Considerations
+---
+title: "Motor Torque and Balancing Considerations"
+author: Doug Elliott
+excerpt: "How we calculated available motor torque for our stepper motors."
+last_modified_at: 2021-09-02T18:28:00-05:00
+categories:
+  - Balancing Physics
+  - Balancing Math
+  - Torque Math
+  - Motor Torque
+tags:
+  - torque
+  - math
+  - physics
+  - balance
+---
 
 One of the goals of our wheel drive system has been to maximize the available torque. This is partly to ensure there is enough correction force available to allow balancing to work, and partly to compensate for the fairly high mass of our current robot. This has influenced our motor choice: we use MakeBlock 42BYG stepper motors which have a 1.7 Amp rating per coil, which is quite a bit higher than motors we previously used.
 
