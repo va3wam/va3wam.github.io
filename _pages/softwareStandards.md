@@ -5,9 +5,11 @@ permalink: /softwareStandards/
 title: "Software standards"
 excerpt: "Summary of the coding standards and best practices used for our projects."
 toc: true
+header:
+  caption: "Vaccume tubes"
+  image: "/assets/images/vaccumTubes.jpg"
 
 ---
-<img src="/assets/images/vaccumTubes.jpg" alt="vaccum tubes" width="100%" height="50%"> 
 When contributing to VA3WAM repositories please follow these standards. With luck we will be able to jump between projects
 with minimal effort.
 
