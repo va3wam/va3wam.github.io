@@ -4,6 +4,8 @@ main:
     url: https://github.com/va3wam/TWIPe/wiki/
   - title: "ZippiTwipi Robot Project"
     url: https://github.com/va3wam/ZippiTwipi/wiki/
+  - title: "Software Standards"
+    url: /softwareStandards/
   - title: "Sitemap"
     url: /sitemap/
   - title: "About"
