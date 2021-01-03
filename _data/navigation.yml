@@ -6,6 +6,8 @@ main:
     url: https://github.com/va3wam/ZippiTwipi/wiki/
   - title: "Software Standards"
     url: /softwareStandards/
+  - title: "Electronic Components"
+    url: /components/
   - title: "Sitemap"
     url: /sitemap/
   - title: "About"
