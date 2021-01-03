@@ -1,4 +1,6 @@
 ---
 layout: splash
-permalink: /     
+permalink: /
+sitemap: false
+
 ---
