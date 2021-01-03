@@ -1,7 +1,8 @@
 ---
 layout: splash
 permalink: /
-hidden: true
+hidden: false
+sitemap: false
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/Apprenticeship.jpg
