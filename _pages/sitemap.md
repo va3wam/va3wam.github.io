@@ -4,7 +4,7 @@ title: "Sitemap"
 excerpt: "List of pages and posts found on this site."
 permalink: /sitemap/
 author_profile: false
-toc: false
+toc: true
 
 ---
 
