@@ -9,8 +9,6 @@ toc_label: "Electronic components that are commonly used in The Aging Apprentice
 
 ---
 The following are common components that are used in the circuitry of VA3WAM projects.
-
-<table width="100%">
   
 ## ESP32
 <img src="/assets/images/huzzah32.jpg" alt="ESP32" height="100" width="100"> 
