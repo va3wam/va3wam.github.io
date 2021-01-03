@@ -5,7 +5,10 @@ permalink: /manufacturing/
 title: "Manufacturing"
 excerpt: "Our small scale machining processes and tools."
 toc: true
-
+header:
+  caption: "Manufacturing"
+  image: "/assets/images/manufacturing.jpg"
+  
 ---
 
 ## Materials
