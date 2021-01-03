@@ -5,6 +5,9 @@ permalink: /circuitry/
 title: "Circuitry"
 excerpt: "How we design and manufacture the circuitry for our projects."
 toc: true
+header:
+  caption: "Circuitry"
+  image: "/assets/images/circuitry.jpg"
 
 ---
 
