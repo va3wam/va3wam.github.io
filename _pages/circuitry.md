@@ -20,6 +20,7 @@ After about a year of refining a PCB milling procedure it was decided that the c
 <li><a href="https://oshpark.com/">OSHPARK</a></li>
 <li><a href="https://jlcpcb.com/">JLC</a></li>
 <li><a href="https://www.seeedstudio.com/">Seeed</a></li>
+</ul>
 
 ## Common Components
 The following development boards are commonly used components in the prototype circuitry of our projects.
