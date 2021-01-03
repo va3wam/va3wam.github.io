@@ -9,7 +9,7 @@ header:
   image: "/assets/images/sitemap_banner.jpg"
   
 ---
-Trying to look for something specific? Here is a list of all the pages found on the site. 
+Looking for something specific? Here is a list of all the pages and posts found on this site. 
 
 <h2>Pages</h2>
 {% for post in site.pages %}
