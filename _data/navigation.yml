@@ -1,12 +1,4 @@
 # main links
 main:
-  - title: "Twipe Robot Project"
-    url: https://github.com/va3wam/TWIPe/wiki/
-  - title: "ZippiTwipi Robot Project"
-    url: https://github.com/va3wam/ZippiTwipi/wiki/
-  - title: "Software Standards"
-    url: /softwareStandards/
-  -title: "Standard Components"
-    url: /components/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
