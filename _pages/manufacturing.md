@@ -13,7 +13,7 @@ header:
 
 ## Materials
 An effort is being made to use as few common components as possible when manufacturng prototype chassis and other 
-hadrware for VA3WAM projects. This page is a master reference to be used when selecting parts and components for a project.
+hadrware for our projects. This page is a master reference to be used when selecting parts and components for a project.
 
 ### Plastic
 If  platic body needs to be milled or turned use 
