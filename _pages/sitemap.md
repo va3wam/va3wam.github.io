@@ -4,7 +4,10 @@ title: "Sitemap"
 sitemap: false
 permalink: /sitemap/
 author_profile: false
-
+header:
+  caption: "Site Map"
+  image: "/assets/images/sitemap_banner.jpg"
+  
 ---
 Trying to look for something specific? Here is a list of all the pages found on the site. 
 
