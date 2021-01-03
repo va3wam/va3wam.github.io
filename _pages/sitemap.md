@@ -1,10 +1,8 @@
 ---
 layout: archive
 title: "Sitemap"
-excerpt: "List of pages and posts found on this site."
 permalink: /sitemap/
 author_profile: false
-toc: true
 
 ---
 Trying to look for something specific? Here is a list of all the pages found on the site. 
