@@ -14,5 +14,3 @@ main:
     url: /sitemap/
   - title: "About"
     url: /about/ 
-  - title: "Test 404"
-    url: /err.html
