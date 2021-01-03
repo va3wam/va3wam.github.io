@@ -1,0 +1,14 @@
+Doug Elliott:
+  name        : "Doug Elliott"
+  bio         : "Geezer geek. retired Cisco computer nerd, canoeist, calligrapher, ham radio operator, trombonist, robot maker, grampa, ex-skydiver, voice actor"
+  avatar      : "/assets/images/bio-photo-2.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:billyrick@rick.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://thewhip.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/extravagantman"
