@@ -3,7 +3,7 @@ title: "Motor Torque and Balancing Considerations"
 author: Doug Elliott
 author_profile: true
 excerpt: "How we calculated available motor torque for our stepper motors."
-last_modified_at: 2021-09-02T18:28:00-05:00
+last_modified_at: 2021-01-02T18:28:00-05:00
 categories:
   - Balancing Physics
   - Balancing Math
