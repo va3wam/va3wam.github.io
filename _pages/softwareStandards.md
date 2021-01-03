@@ -2,7 +2,7 @@
 layout: single
 author_profile: false
 permalink: /softwareStandards/
-title: "Software standards"
+title: "Software Standards"
 excerpt: "Summary of the coding standards and best practices used for our projects."
 toc: true
 header:
