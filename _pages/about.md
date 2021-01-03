@@ -30,7 +30,7 @@ First and foremost, I do not collect any data about you on this web site. You ca
 This site does not use log files.
 
 ### Cookies and Web Beacons
-When you visit this site “convenience” cookies may be stored on your computer but I am *not* putting them there. I simply call this out because I cannot vouche for what Github is doing. 
+When you visit this site “convenience” cookies may be stored on your computer but I am not putting them there. I simply call this out because I cannot vouche for what Github may be doing. 
 
 Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
 
