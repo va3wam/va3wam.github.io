@@ -13,4 +13,4 @@ main:
   - title: "About"
     url: /about/ 
   - title: "Test 404"
-    url: /err/
+    url: /err.html
