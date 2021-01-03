@@ -3,7 +3,7 @@ layout: single
 author_profile: false
 permalink: /components/
 title: "Standard Electronic Components"
-excerpt: "Electronic components that are commonly used in The Aging Apprentice projects."
+excerpt: "Electronic components that are commonly used in our projects."
 toc: true
 
 ---
