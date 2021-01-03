@@ -7,10 +7,10 @@ excerpt: "Summary of the coding standards and best practices used for our projec
 toc: true
 header:
   caption: "Software Standards"
-  image: "/assets/images/vaccumTubes.jpg"
+  image: "/assets/images/software.jpg"
 
 ---
-When contributing to VA3WAM repositories please follow these standards. With luck we will be able to jump between projects
+When contributing to our repositories please follow these standards. With luck we will be able to jump between projects
 with minimal effort.
 
 ## C++
