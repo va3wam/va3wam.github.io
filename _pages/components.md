@@ -7,7 +7,7 @@ excerpt: "Electronic components that are commonly used in The Aging Apprentice p
 toc: true
 
 ---
-The following are common components that are used in the circuitry of VA3WAM projects.
+The following development boards are commonly used components in the prototype circuitry of our projects.
   
 ## ESP32
 <img src="/assets/images/huzzah32.jpg" alt="ESP32" height="100" width="100"> 
