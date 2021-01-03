@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Sitemap"
-excerpt: "List of pages and posts foind on this site."
+excerpt: "List of pages and posts found on this site."
 permalink: /sitemap/
 author_profile: false
 toc: false
