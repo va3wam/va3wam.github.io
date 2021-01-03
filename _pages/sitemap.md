@@ -5,6 +5,7 @@ excerpt: "List of pages and posts foind on this site."
 permalink: /sitemap/
 author_profile: false
 toc: false
+
 ---
 
 Trying to look for something specific? Here is a list of all the pages found on the site. 
