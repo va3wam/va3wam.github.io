@@ -8,6 +8,8 @@ main:
     url: /software/
   - title: "Circuitry"
     url: /circuitry/
+  - title: "Manufacturing"
+    url: /manufacturing/  
   - title: "Sitemap"
     url: /sitemap/
   - title: "About"
