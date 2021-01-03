@@ -6,7 +6,7 @@ title: "Software standards"
 excerpt: "Summary of the coding standards and best practices used for our projects."
 toc: true
 header:
-  caption: "Vaccume tubes"
+  caption: "Software Standards"
   image: "/assets/images/vaccumTubes.jpg"
 
 ---
