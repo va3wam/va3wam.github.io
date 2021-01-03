@@ -4,7 +4,7 @@
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
 [![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
 
---
+---
 
 This repository contains the source code for [The Aging Apprentice website](https://va3wam.github.io/) hosted on Github pages. 
 
@@ -29,7 +29,7 @@ Profile - https://github.com/va3wam
 │   │   You can use the wiki tab in this repository to view this wiki
 ```
 
---
+---
 
 ## Contributing
 
