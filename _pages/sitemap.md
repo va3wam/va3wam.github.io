@@ -7,7 +7,6 @@ author_profile: false
 toc: true
 
 ---
-
 Trying to look for something specific? Here is a list of all the pages found on the site. 
 
 <h2>Pages</h2>
