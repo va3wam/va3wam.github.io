@@ -5,7 +5,10 @@ permalink: /about/
 title: "About"
 excerpt: "Embedded software design. Prototype machining."
 toc: true
-
+header:
+  caption: "About"
+  image: "/assets/images/about_banner.jpg"
+  
 ---
 This website is the home of the Aging Apprentice. The content on this site covers embedded programming, circuit design and small scale CNC manufacturing. The main application focus is robotics.
 
