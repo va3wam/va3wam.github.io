@@ -3,9 +3,8 @@ layout: single
 author_profile: false
 permalink: /components/
 title: "Standard Electronic Components"
-excerpt: "Common PCB components."
+excerpt: "Electronic components that are commonly used in The Aging Apprentice projects."
 toc: true
-toc_label: "Electronic components that are commonly used in The Aging Apprentice projects."
 
 ---
 The following are common components that are used in the circuitry of VA3WAM projects.
