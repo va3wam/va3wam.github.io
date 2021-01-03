@@ -5,7 +5,6 @@ permalink: /softwareStandards/
 title: "Software standards"
 excerpt: "Summary of the coding standards and best practices used for our projects."
 toc: true
-toc_label: "The software standards applied to all of the code residing in The Aging Apprentice Github repositories"
 
 ---
 <img src="/assets/images/vaccumTubes.jpg" alt="vaccum tubes" width="100%" height="50%"> 
