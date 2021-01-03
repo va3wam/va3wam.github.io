@@ -11,70 +11,8 @@ toc: true
 ## PCB Design
 The main tools that we use to design <a href="https://en.wikipedia.org/wiki/Printed_circuit_board">Printed Circuit Boards</a> (PCBs) are the open source tool <a href="https://fritzing.org/home/">Fritzing</a> and <a href="https://en.wikipedia.org/wiki/AutoCAD">AutoCAD</a>'s <a href="https://www.autodesk.ca/en/products/eagle/overview?referrer=%2Fproducts%2Feagle%2Foverview">Eagle CAD</a>.
 
-### Eagle Anomaly with Pads
-We had a problem with transferring the circuit board layout from Eagle to Fusion, but we found a workaround. The problem showed itself as pads that disappeared in the transfer from an Eagle board layout to a layer in a Fusion sketch. <b>Note that we have stopped milling our own boards so this is no longer a concern for us but we are including this here for those hearty souls that still make their own PCBs.</b>
-
-Following is the bug report we submitted to the Eagle support forum.
-
-We (some amateur robot hackers) build our circuit boards using this set of steps:
-
-<ul>
-    <li>design and lay out board in Eagle 9.4.2</li>
-    <li>export a DXF file from Eagle</li>
-    <li>import DXF into Fusion 360</li>
-    <li>use CNC mill to create circuit board</li>
-</ul>
-
-We have found that some of the pads don’t survive the journey from Eagle to Fusion, and we needed to do a lot of painful fusion repairs until we found the procedural work around. By testing without Fusion in the process, and doing a lot of detective work, we were able to convince ourselves that the problem is due to Eagle mishandling pads that don’t have an explicit shape attribute, when creating a DXF file. We have come up with a work around that completely solves the problem as far as we can tell.
-
-To investigate, we examined DXF files by viewing them in the Irfanview graphics display utility, which we then save in PNG format for later comparison.
-
-We came up with a simple example that illustrates the issue, and the fix. It uses a “board” that consists of a single 1N4004 diode, and nothing else, not even traces. It comes from the Eagle-Libraries-master file, so we assume it has a valid footprint. In particular, it is legitimate to not have an explicit pad shape attribute, which is the case for both leads of the diode.
-
-The illustration goes like this:
-
-<ul>
-<li>create a board containing just the diode. In the accompanying zip file, this is reproduce.brd and sch</li>
-<li>observe the pad definitions:
-<pre>
-<code>
-     $ grep "< pad " reproduce.brd
-     < pad name="A" x="5.08" y="0" drill="1.1176" diameter="1.9304"/>
-     < pad name="C" x="-5.08" y="0" drill="1.1176" diameter="1.9304"/>
-</code>
-</pre>
-</li>
-<li>export a DXF file, reproduce.dxf in the zip file</li>
-<li>view the file in Irfanview.</li>
-<li>Observe that there are single circles for the drill holes for each lead, but no outside perimeter of the pad</li>
-<li>save the file as reproduce.png for later comparisons.</li>
-</ul>
-
-Now for the work around:
-
-The fix is to put an explicit shape into the pad definition. We used “octagon” which has worked out well. Since the footprint is put into the brd file when the part is added, fixing the footprint in your library won't solve the problem (unless you remove and re-ad the part, which I think would be painful). What you can do is edit the copy inside the brd and sch files. You have to do this exactly the same way in both files, or Eagle will declare the files to be inconsistent. I just wrote the following one line script to add an octagon shape value where none was specified. This is an AWK command, runnable from gitbash or cygwin. Anyway, here's the command sequence to fix both the brd and sch files:
-
-<code>
-     $ awk '{if($1!="<pad"||$0~"shape"){print $0} else print substr($0,0,length($0)-2),"shape=\"octagon\"/>"}' reproduce.brd > fixed.brd
-     $ awk '{if($1!="<pad"||$0~"shape"){print $0} else print substr($0,0,length($0)-2),"shape=\"octagon\"/>"}' reproduce.sch > fixed.sch
-</code>
-(Each command should be one long line - it’s likely going to wrap to 2 lines in this post.)
-
-Here’s what the pad definitions look like now:
-<code>
-    $ grep "<pad " fixed.brd
-    <pad name="A" x="5.08" y="0" drill="1.1176" diameter="1.9304" shape="octagon"/>
-    <pad name="C" x="-5.08" y="0" drill="1.1176" diameter="1.9304" shape="octagon"/>
-</code>
-Going through the same process as before to examine the pads in the DXF file, we see that they now have an octagonal perimeter around the drill hole, so the pad is actually there. When we import the corrected DXF file to Fusion, the pads don’t require any fixes to have a viable board.
-
-I hope this explanation makes some sense. If not, email me and I’ll try to clarify.
-
-Cheers / Doug Elliott VA3DAE / canoe.eh@gmail.com / https://github.com/va3wam/TWIPi
-
 ### Units in Eagle
 Being Canadians, so we should be using metric units, but for some strange reason (maybe rationalized by the nature of the parts we're using) we do a lot of stuff in imperial units. This is important when a board layout starts its journey from Eagle to Fusion. BEFORE you do the DXF file export, you must change the units from metric to imperial.
-
 
 ## PCB Fabrication
 After about a year of refining a PCB milling procedure it was decided that the cost and quality of the boards that we were producing could not match what a fabrication service could do for us so we have now switched to outsourcing our PCB fabrication. We currently use the serives of <a href="https://www.pcbway.com/">PCBWAY</a> though we also short listed these services for future consideration:
