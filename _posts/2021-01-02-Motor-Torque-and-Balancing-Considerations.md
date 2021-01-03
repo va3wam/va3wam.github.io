@@ -30,9 +30,9 @@ Despite this we were able to get the robots to balance for short periods of time
 
 To investigate, we worked on 3 sub-projects:
 
-    • Bench testing of motor performance at various current settings, and rotation speeds
-    • Analysis of the torque requirements of balancing
-    • Analysis of the torque capacity of the motors
+- Bench testing of motor performance at various current settings, and rotation speeds
+- Analysis of the torque requirements of balancing
+- Analysis of the torque capacity of the motors
 
 A) Motor Performance
 
@@ -48,9 +48,9 @@ We attempted some systematic testing, considering these factors:
 We eventually just tested on one wheel, because changing Vref on the DRV8825 obscured by the ESP32’s console cable is a pain.
 
 Speed: What we call speed is inverted, and low numbers are faster wheel rotation. Technically, the number is the count of 20 usec clock ticks between sending a step command to the motor controller. Each step results in a 1.8 degree rotation of the wheel. We used 3 speeds:
-    800 - slow
-    500 - medium
-    300 - fast
+- 800 - slow
+- 500 - medium
+- 300 - fast
 
 Details of our testing are in the DRV-test-cases.??? spreadsheet, but the summary is that we needed to reduce the Vref to .9 volts to avoid motor pauses and unreliability. To have a little safety margin, we decided to us a Vref of .85 which means a maximum current of twice that, 1.7 Amps. This matches motor current rating of 1.7 Amps, assuming we’re ignoring 71% factor implied by using single stepping. Our test results suggest that the using the 71% factor in the max current calculation isn’t valid.
 
