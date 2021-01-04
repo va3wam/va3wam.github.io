@@ -14,7 +14,7 @@ This website is the home of the Aging Apprentice. The content on this site cover
 
 ---
 ## The Authors
-I value my privacy but feel compelled to give back to the open source community, which has given me so much. I have elected not to provide much information about myself. This is a concious choice that stems from my rather old fasioned notion regarding personal privacy. I ask those of you that are cleaver enough to devine who I am to keep it to themselves. The less shy contributors to this site are given their due where appropriate. 
+Our team consistes of myself (va3wam) and Doug Elliott. If you are interested in what we are doing and wish to join in drop us a line. 
 
 ---
 ## The Technical Bits
