@@ -2,6 +2,7 @@
 layout: archive
 title: "Sitemap"
 sitemap: false
+exclude_from_search: true
 permalink: /sitemap/
 author_profile: false
 header:
