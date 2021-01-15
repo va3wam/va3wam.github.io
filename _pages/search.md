@@ -5,6 +5,7 @@ layout: page
 permalink: /search/
 tipue_search_active: true
 exclude_from_search: true
+
 ---
 
 <form action="{{ page.url | relative_url }}">
