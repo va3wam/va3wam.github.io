@@ -8,6 +8,8 @@ toc: true
 header:
   caption: "Software"
   image: "/assets/images/software.jpg"
+tipue_search_active: true
+exclude_from_search: false
 
 ---
 
