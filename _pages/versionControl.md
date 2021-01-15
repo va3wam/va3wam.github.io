@@ -10,7 +10,7 @@ header:
   image: "/assets/images/versionControl.jpg"
   
 ---
-Our [https://en.wikipedia.org/wiki/Application_software](application software) and associated documentation use [https://en.wikipedia.org/wiki/Git](Git) and the [https://en.wikipedia.org/wiki/GitHub](Github) hosting service to handle the [https://en.wikipedia.org/wiki/Version_control](software version control) (SVC) aspects of the [https://en.wikipedia.org/wiki/Change_control](change control) process that we follow. This page details how to set up and use the the VA3WAM git environment. 
+Our [application software](https://en.wikipedia.org/wiki/Application_software) and associated documentation use [Git](https://en.wikipedia.org/wiki/Git) and the [Github](https://en.wikipedia.org/wiki/GitHub) hosting service to handle the [software version control](https://en.wikipedia.org/wiki/Version_control) (SVC) aspects of the [change control](https://en.wikipedia.org/wiki/Change_control) process that we follow. This page details how to set up and use the the VA3WAM git environment. 
 
 ## Local Directory Setup
 Set up your local hard-drive with a directory structure like the one below. The "Markdown" directory tree hold local repositories for Pages and Wiki. The "PlatformIO" directory tree holds local repositories for embedded code. 
