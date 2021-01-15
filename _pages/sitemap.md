@@ -8,7 +8,9 @@ author_profile: false
 header:
   caption: "Site Map"
   image: "/assets/images/sitemap_banner.jpg"
-  
+tipue_search_active: true
+exclude_from_search: true
+
 ---
 Looking for something specific? Here is a list of all the pages and posts found on this site. 
 
