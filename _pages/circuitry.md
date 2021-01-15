@@ -8,6 +8,8 @@ toc: true
 header:
   caption: "Circuitry"
   image: "/assets/images/circuitry.jpg"
+tipue_search_active: true
+exclude_from_search: false
 
 ---
 
