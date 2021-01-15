@@ -10,6 +10,8 @@ main:
     url: /circuitry/
   - title: "Manufacturing"
     url: /manufacturing/  
+  - title: "Version Control"
+    url: /versionControl/    
   - title: "Sitemap"
     url: /sitemap/
   - title: "About"
