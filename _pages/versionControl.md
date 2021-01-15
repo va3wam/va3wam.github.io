@@ -1,3 +1,15 @@
+---
+layout: single
+author_profile: false
+permalink: /versionControl/
+title: "Version Conrol"
+excerpt: "Instructions on how to use Github to branch, pull, and push content"
+toc: true
+header:
+  caption: "Version Control"
+  image: "/assets/images/versionControl.jpg"
+  
+---
 VA3WAM <a href="https://en.wikipedia.org/wiki/Application_software">application software</a> and associated documentation use <a href="https://en.wikipedia.org/wiki/Git">Git</a> and the <a href="https://en.wikipedia.org/wiki/GitHub">Github</a> hosting service to handle the <a href="https://en.wikipedia.org/wiki/Version_control">software version control</a> (SVC) aspects of the <a href="https://en.wikipedia.org/wiki/Change_control">change control</a> process that we follow. This page details how to set up and use the the VA3WAM git environment. 
 
 <h2>Local Directory Setup</h2>
