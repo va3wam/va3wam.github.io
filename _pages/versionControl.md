@@ -41,7 +41,7 @@ Set up your local hard-drive with a directory structure like the one below. The 
 Once the directory tree above is set up on your hard drive use <code>git clone</code> command to set up any of the repositories that interest you. <i>Note that you get the URL in your browser by navigating to the repository you want, click the green <b>Clone or Download</b> button and copying the <b> repository URL</b> to the clipboard</i>. The next steps are done in a terminal session within Visual Studio Code.
     
 ### Website
-here is a link to the [Aging Apprentice website Github](https://github.com/va3wam/va3wam.github.io). 
+Here is a link to the source code for [Aging Apprentice website](https://github.com/va3wam/va3wam.github.io) which is hosted on [Github Pages](https://pages.github.com).
 
 ### Embedded Code Repository
 If you want to work on a VA3WAM Github <b>embedded code repository</b> follow these steps.
