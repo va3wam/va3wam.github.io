@@ -8,7 +8,9 @@ toc: true
 header:
   caption: "Version Control"
   image: "/assets/images/versionControl.jpg"
-  
+tipue_search_active: true
+exclude_from_search: false
+
 ---
 Our [application software](https://en.wikipedia.org/wiki/Application_software) and associated documentation use [Git](https://en.wikipedia.org/wiki/Git) and the [Github](https://en.wikipedia.org/wiki/GitHub) hosting service to handle the [software version control](https://en.wikipedia.org/wiki/Version_control) (SVC) aspects of the [change control](https://en.wikipedia.org/wiki/Change_control) process that we follow. This page details how to set up and use the the VA3WAM git environment. 
 
