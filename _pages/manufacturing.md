@@ -8,7 +8,9 @@ toc: true
 header:
   caption: "Manufacturing"
   image: "/assets/images/manufacturing.jpg"
-  
+tipue_search_active: true
+exclude_from_search: false
+
 ---
 
 ## Materials
