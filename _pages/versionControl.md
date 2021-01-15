@@ -10,9 +10,9 @@ header:
   image: "/assets/images/versionControl.jpg"
   
 ---
-VA3WAM <a href="https://en.wikipedia.org/wiki/Application_software">application software</a> and associated documentation use <a href="https://en.wikipedia.org/wiki/Git">Git</a> and the <a href="https://en.wikipedia.org/wiki/GitHub">Github</a> hosting service to handle the <a href="https://en.wikipedia.org/wiki/Version_control">software version control</a> (SVC) aspects of the <a href="https://en.wikipedia.org/wiki/Change_control">change control</a> process that we follow. This page details how to set up and use the the VA3WAM git environment. 
+Our <a href="https://en.wikipedia.org/wiki/Application_software">application software</a> and associated documentation use <a href="https://en.wikipedia.org/wiki/Git">Git</a> and the <a href="https://en.wikipedia.org/wiki/GitHub">Github</a> hosting service to handle the <a href="https://en.wikipedia.org/wiki/Version_control">software version control</a> (SVC) aspects of the <a href="https://en.wikipedia.org/wiki/Change_control">change control</a> process that we follow. This page details how to set up and use the the VA3WAM git environment. 
 
-<h2>Local Directory Setup</h2>
+## Local Directory Setup
 Set up your local hard-drive with a directory structure like the one below. The "Markdown" directory tree hold local repositories for Pages and Wiki. The "PlatformIO" directory tree holds local repositories for embedded code. 
 <ul>
    <li>/VisualStudioCode</li>
@@ -36,36 +36,37 @@ Set up your local hard-drive with a directory structure like the one below. The 
          </ul>
       </ul>
    </ul>
-<h2>Local Repository Setup</h2>
+## Local Repository Setup
 Once the directory tree above is set up on your hard drive use <code>git clone</code> command to set up any of the repositories that interest you. <i>Note that you get the URL in your browser by navigating to the repository you want, click the green <b>Clone or Download</b> button and copying the <b> repository URL</b> to the clipboard</i>. The next steps are done in a terminal session within Visual Studio Code.
     
-<h3>Pages Site</h3>
+### Pages Site
 If you want to work on the VA3WAM Github <b>Pages</b> content follow these steps.
   <code>
      cd .../VisualStudioCode/Markdown/Projects
      git clone https://github.com/va3wam/va3wam.github.io
   </code>
 
-<h3>Wiki Site</h3>
+### Wiki Site
 If you want to work on the VA3WAM Github <b>Wiki</b> content follow these steps.
   <code>
      cd .../VisualStudioCode/Markdown/Projects
      git clone https://github.com/va3wam/va3wam.github.io.wiki.git
   </code>
 
-<h3>Embedded Code Repository</h3>
+### Embedded Code Repository
 If you want to work on a VA3WAM Github <b>embedded code repository</b> follow these steps.
   <code>
      cd .../VisualStudioCode/PlatformIO/Projects
      git clone https://github.com/va3wam/{project name}
   </code>
 
-<h3>Set up Remote Association</h3>
+### Set up Remote Association
 Once you clone the directory to the Projects folder you should see a sub-directory named after the cloned repository. Go into that directory and issue the command <code>git remote</code>. If you get the response origin back then you are all set up with a local repository and an associated remote. If you get a blank response back then issue the command <code>git remote add origin {repository URL}</code> to set up the remote. At this point you can start developing your additions to the repository.    
-<h2>Git Workflow</h2>
+
+## Git Workflow
 VA3WAM repositories are updated using a <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">feature branching</a> workflow. This approach was selected after reading a <a href="https://nvie.com/posts/a-successful-git-branching-model/">post</a> by Vincent Driessen about how his widely adapted method created 2010 is worth revisiting. The approach selected for VA3WAM repositories was chosen based on this survey conducted by <a href="https://en.wikipedia.org/wiki/Atlassian">Atlassian</a> regarding <a href="https://www.atlassian.com/git/tutorials/comparing-workflows">common Git workflows</a>. Here is a run down on how to contribute following this workflow. If you want to practice this process and have been granted access then you can use the <a href="https://github.com/va3wam/LearnToBranch">VA3WAM LearnToBranch</a> repository.  
 
-<h3>Branch</h3>
+### Branch
 If you want to make changes to an existing VA3WAM repository you must first create a branch as we do not submit changes to the remote repositories master branch. Here is the process.
 
 <ol>
@@ -78,10 +79,10 @@ If you want to make changes to an existing VA3WAM repository you must first crea
 </ol>
 Now start coding. A best practice for naming a branch is either an issue number as all work should be assigned an issue before working on it. If you want  to know what branch you are in locally or what remote branch you are pushing to type <code>git status -sb</code>. To delete a local branch type <code>git branch -d {branch name}</code>. To delete a remote branch type <code>git push --delete origin {branch name}</code>.
 
-<h3>Commit</h3>
+### Commit
 <a href="https://git-scm.com/docs/git-commit">Committing</a> does not affect the local Master (assuming that you branched as described above) nor the remote repository at all. It is a best practice to make commits often. This will create a nice set of comments for all the work being done. These comments will carry forward to your pull request. <code>git commit -a -m "{put message here}"</code>. Alternatively you can use the <a href="https://code.visualstudio.com/Docs/editor/versioncontrol#_git-support">Source Control Tool</a> in Visual Studio Code to do your commits. 
 
-<h3>Pull Request</h3>
+### Pull Request
 We use pull requests to merge branches with master. To make the pull/merge go smoothly you must first ensure that your branch is synchronized with master. Here is how to do that:
 <ul>
 <li><code>git checkout master</code> - make sure that you are in your local master branch</li>
@@ -92,7 +93,7 @@ We use pull requests to merge branches with master. To make the pull/merge go sm
 </ul>
 At this point get into your browser and use the GitHub Pull Request button to create a pull request. Your pull request may be simple and be done fast or it may be complex and involve resolving conflicts or a lot of back and forward with reviewers. Whatever the case, eventually your pull request will be merged to the remote master. Once your pull request gets merged you need to do some clean up.
 
-<h3>Post Merge</h3>
+### Post Merge
 Once your pull request is merged into mater on the remote server you need to clean up your local and remote branches. Here is how to do that. 
 <ul>
 <li><code>git checkout master</code> - get into the local master directory</li>
