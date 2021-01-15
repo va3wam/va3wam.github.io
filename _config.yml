@@ -51,11 +51,11 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # false # true, false (default)
-search_provider          : # lunr # lunr (default), algolia, google
+search_provider          : tipue # lunr (default), algolia, google, tipue
 # Tipue search settings
-tipue_search:
+tipue:
   include                :
     pages                : true
   exclude:
