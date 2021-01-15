@@ -10,7 +10,7 @@ header:
   image: "/assets/images/versionControl.jpg"
   
 ---
-Our <a href="https://en.wikipedia.org/wiki/Application_software">application software</a> and associated documentation use <a href="https://en.wikipedia.org/wiki/Git">Git</a> and the <a href="https://en.wikipedia.org/wiki/GitHub">Github</a> hosting service to handle the <a href="https://en.wikipedia.org/wiki/Version_control">software version control</a> (SVC) aspects of the <a href="https://en.wikipedia.org/wiki/Change_control">change control</a> process that we follow. This page details how to set up and use the the VA3WAM git environment. 
+Our [https://en.wikipedia.org/wiki/Application_software](application software) and associated documentation use [https://en.wikipedia.org/wiki/Git](Git) and the [https://en.wikipedia.org/wiki/GitHub](Github) hosting service to handle the [https://en.wikipedia.org/wiki/Version_control](software version control) (SVC) aspects of the [https://en.wikipedia.org/wiki/Change_control](change control) process that we follow. This page details how to set up and use the the VA3WAM git environment. 
 
 ## Local Directory Setup
 Set up your local hard-drive with a directory structure like the one below. The "Markdown" directory tree hold local repositories for Pages and Wiki. The "PlatformIO" directory tree holds local repositories for embedded code. 
@@ -36,22 +36,12 @@ Set up your local hard-drive with a directory structure like the one below. The 
          </ul>
       </ul>
    </ul>
+
 ## Local Repository Setup
 Once the directory tree above is set up on your hard drive use <code>git clone</code> command to set up any of the repositories that interest you. <i>Note that you get the URL in your browser by navigating to the repository you want, click the green <b>Clone or Download</b> button and copying the <b> repository URL</b> to the clipboard</i>. The next steps are done in a terminal session within Visual Studio Code.
     
-### Pages Site
-If you want to work on the VA3WAM Github <b>Pages</b> content follow these steps.
-  <code>
-     cd .../VisualStudioCode/Markdown/Projects
-     git clone https://github.com/va3wam/va3wam.github.io
-  </code>
-
-### Wiki Site
-If you want to work on the VA3WAM Github <b>Wiki</b> content follow these steps.
-  <code>
-     cd .../VisualStudioCode/Markdown/Projects
-     git clone https://github.com/va3wam/va3wam.github.io.wiki.git
-  </code>
+### Website
+here is a link to the [Aging Apprentice website Github](https://github.com/va3wam/va3wam.github.io). 
 
 ### Embedded Code Repository
 If you want to work on a VA3WAM Github <b>embedded code repository</b> follow these steps.
