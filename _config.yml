@@ -59,7 +59,7 @@ tipue:
   include                :
     pages                : true
   exclude:
-    files                : [search.md]
+    files                : [index.md, search.html]
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
