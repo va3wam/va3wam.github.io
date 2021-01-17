@@ -47,7 +47,7 @@ We do all our CAD and CAM work in <a href="https://www.autodesk.com/products/fus
 Both our mill and lathe are CNC machines that use a <a href="https://tormach.com/pathpilot.html">Pathpilot</a> controller. 
 Fortunately there is an NC converter plugin for Fusiuon360 that is pathpiot compatable.  
 
-### Machininig
+### Machining
 We do the bulk of our machining using our 
 <a href="https://tormach.com/support/mill/pcnc-770-series-3-documents/pcnc-770-maintenance-documents/">
 Tormach PCNC 770 Series 3 mill</a> and our <a href="https://tormach.com/support/lathe/15l-slant-pro-lathe-documents">
