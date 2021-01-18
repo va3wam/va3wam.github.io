@@ -16,44 +16,36 @@ Our [application software](https://en.wikipedia.org/wiki/Application_software) a
 
 ## Local Directory Setup
 Set up your local hard-drive with a directory structure like the one below. The "Markdown" directory tree hold local repositories for Pages and Wiki. The "PlatformIO" directory tree holds local repositories for embedded code. 
-<ul>
-   <li>/VisualStudioCode</li>
-      <ul>
-         <li>/Markdown</li>
-         <ul>
-            <li>Projects</li>
-            <ul>
-               <li>/va3wam.github.io</li>
-               <li>/va3wam.github.io.wiki</li>
-            </ul>
-         </ul>
-         <li>/PlatformIO</li>
-         <ul>
-            <li>Projects</li>
-            <ul>
-               <li>/TWIPI</li>
-               <li>/telemetryDemo</li>
-               <li>/Level32</li>         
-            </ul>
-         </ul>
-      </ul>
-   </ul>
+```
+.
++--VisualStudioCode
+   +--Markdown
+      +--Projects
+         +--Github URL (i.e. va3wam.github.io)
+         +--Github URL (i.e. https://github.com/va3wam/TWIPe/wiki)
+   +--PlatformIO
+      +--Projects
+         +--TWIPI
+         +--etc
+ ```
 
 ## Local Repository Setup
-Once the directory tree above is set up on your hard drive use <code>git clone</code> command to set up any of the repositories that interest you. <i>Note that you get the URL in your browser by navigating to the repository you want, click the green <b>Clone or Download</b> button and copying the <b> repository URL</b> to the clipboard</i>. The next steps are done in a terminal session within Visual Studio Code.
+Once the directory tree above is set up on your hard drive use the command 
+
+``` git clone ``` to set up any of the repositories that interest you. <i>Note that you get the URL in your browser by navigating to the repository you want, click the green <b>Clone or Download</b> button and copying the <b> repository URL</b> to the clipboard</i>. The next steps are done in a terminal session within Visual Studio Code.
     
 ### Website
 Here is a link to the source code for [Aging Apprentice website](https://github.com/va3wam/va3wam.github.io) which is hosted on [Github Pages](https://pages.github.com).
 
 ### Embedded Code Repository
 If you want to work on a VA3WAM Github <b>embedded code repository</b> follow these steps.
-  <code>
-     cd .../VisualStudioCode/PlatformIO/Projects
-     git clone https://github.com/va3wam/{project name}
-  </code>
+```
+cd .../VisualStudioCode/PlatformIO/Projects
+git clone https://github.com/va3wam/{project name}
+```
 
 ### Set up Remote Association
-Once you clone the directory to the Projects folder you should see a sub-directory named after the cloned repository. Go into that directory and issue the command <code>git remote</code>. If you get the response origin back then you are all set up with a local repository and an associated remote. If you get a blank response back then issue the command <code>git remote add origin {repository URL}</code> to set up the remote. At this point you can start developing your additions to the repository.    
+Once you clone the directory to the Projects folder you should see a sub-directory named after the cloned repository. Go into that directory and issue the command ```git remote```. If you get the response origin back then you are all set up with a local repository and an associated remote. If you get a blank response back then issue the command <code>git remote add origin {repository URL}</code> to set up the remote. At this point you can start developing your additions to the repository.    
 
 ## Git Workflow
 VA3WAM repositories are updated using a <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">feature branching</a> workflow. This approach was selected after reading a <a href="https://nvie.com/posts/a-successful-git-branching-model/">post</a> by Vincent Driessen about how his widely adapted method created 2010 is worth revisiting. The approach selected for VA3WAM repositories was chosen based on this survey conducted by <a href="https://en.wikipedia.org/wiki/Atlassian">Atlassian</a> regarding <a href="https://www.atlassian.com/git/tutorials/comparing-workflows">common Git workflows</a>. Here is a run down on how to contribute following this workflow. If you want to practice this process and have been granted access then you can use the <a href="https://github.com/va3wam/LearnToBranch">VA3WAM LearnToBranch</a> repository.  
@@ -61,10 +53,9 @@ VA3WAM repositories are updated using a <a href="https://www.atlassian.com/git/t
 ### Branch
 If you want to make changes to an existing VA3WAM repository you must first create a branch as we do not submit changes to the remote repositories master branch. Here is the process.
 
-<ol>
-   <li><code>git checkout master</code> - get into the local master branch</li>
-   <li><code>git pull</code> - make sure your local mater is in sync with the remote master</li>
-   <li><code>git checkout -b {branch name}</code> - create a local branch and move to it. Use a meaningful branch name like an issue number or reference to the purpose of the code.</li>
+1. ```git checkout master``` to get into the local master branch
+2. ```git pull``` to make sure your local mater is in sync with the remote master
+3. ```git checkout -b {branch name}``` to create a local branch and move to it. Use a meaningful branch name like an issue number or reference to the purpose of the code
    <li><code>git merge master</code> - put local mater code into local branch</li>
    <li><code>git push --set-upstream origin {branch name}</code> - create a branch on the remote server and push the local branch content up to it.</li>
    <li><code>git branch -a</code> - check your work. You should see you local and remote branches listed</li>
