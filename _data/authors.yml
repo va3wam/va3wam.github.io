@@ -22,7 +22,7 @@ Old Squire:
       url: "mailto:va3wam@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://github.com/va3wam/va3wam.github.io/"
+      url: "https://va3wam.github.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/va3wam"
