@@ -3,7 +3,7 @@ title: "Twipe Robot Technology Stack"
 author: Old Squire
 author_profile: true
 excerpt: "The IoT technology stack used for the Twipe project."
-last_modified_at: 2021-02-08T18:28:00-05:00
+last_modified_at: 2021-02-07T18:28:00-05:00
 categories:
   - IoT
   - Technology stack
