@@ -71,8 +71,8 @@ Communication between the robot and the MQTT broker is comprised of MQTT messagi
 ### Device Management
 Monitoring and dynamic configuration of the robot is done via MQTT messages between the web browser client and the robot. While not yet implemented the plan is to include Over-The-Air (OTA) for coe updates. Today code updates are done via a local USB micro conection.
 
-## Data Analytics
+## Layer 4: Data Analytics
 The robot outputs two types of data. One is health data in the form of error counts for various events of interest. The second is telemetry data which provides real time sensor data regarding the balancing activities of the robot.  
 
-## Applications
+## Layer 5: Applications
 The Twipe robot runs a monolithic firmware image written in C++ and located in a [Github respository](https://github.com/va3wam/TWIPe/tree/master/src). The operator console runs in a web browser and is written in HTML, Javascript and cascading style sheets. 
