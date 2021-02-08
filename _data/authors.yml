@@ -12,3 +12,17 @@ Doug Elliott:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/nerdoug"
+Old Squire:
+  name        : "Old Squire"
+  bio         : "Life long learner"
+  avatar      : "/assets/images/mrX.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:va3wam@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://github.com/va3wam/va3wam.github.io/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/va3wam"
