@@ -56,8 +56,23 @@ execution.
 ### Application Software
 Embedded systems are programed in C++ using Arduino core libraries.
 
-## Communications
+## Layer 3: Communications
+This section outlines the communication implemetation strategy used by the Twipe robot.
 
-### Telemetry data
+### Infrastructure
+Twipe features a 2.4GHz WiFi radio, a WiFi access point, an MQTT broker and a client device capable of running a web browser.
 
+### Identification
+The unqiue media access control address of the radio prefixed by 'twipe' is used to uniquely identify each Twipe robot to both the required WiFi Access Point and the MQTT broker. This makes it possible for multipe robots to co-exist in the same network.
 
+### Data Protocols
+Communication between the robot and the MQTT broker is comprised of MQTT messaging encapsulated in IPv4 packets. Communication between the MQTT broker and the web browser client is comprised of MQTT messages tunneled through a websocket connection.  
+
+### Device Management
+Monitoring and dynamic configuration of the robot is done via MQTT messages between the web browser client and the robot. While not yet implemented the plan is to include Over-The-Air (OTA) for coe updates. Today code updates are done via a local USB micro conection.
+
+## Data Analytics
+The robot outputs two types of data. One is health data in the form of error counts for various events of interest. The second is telemetry data which provides real time sensor data regarding the balancing activities of the robot.  
+
+## Applications
+The Twipe robot runs a monolithic firmware image written in C++ and located in a [Github respository](https://github.com/va3wam/TWIPe/tree/master/src). The operator console runs in a web browser and is written in HTML, Javascript and cascading style sheets. 
