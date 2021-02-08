@@ -26,11 +26,14 @@ The MQTT broker runs on a Raspberry Pi 3 Model B v1.2. You can tell what version
 
 ### OS
 The MQTT broker runs Raspian Linux 10 (Buster). You can get the OS version by typing this command in a terminal window:
+
 > cat /etc/os-release
+
 The robot runs FreeRTOS in order to manage it's WiFi stack as well as handle multitasking via the primitive xTaskCreatePinnedToCore(). The image we use comes bundled with the PlatformIO.
 
 ### Mosquitto
 We use version 1.5.7 of the Mosquitto with websockets enabled for our MQTT broker. You can check the version of Mosquitto that you are running by issuing the command to start the Mosquitto service as follows (ignore the error messages you get if the service is already running). That command is:
+
 > mosquitto 
 
 ## The Code
