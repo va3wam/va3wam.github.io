@@ -40,9 +40,8 @@ featuring the Texas Instrument DRV8825 bipolar stepper motor driver.
 
 ### Physical Properties
 The Twipe robot's chassis measures 8.5" tall by 5.25" wide by 3.75" deep. When the wheels are attached to TWIPe the robot's height measures 
-8.625" tall. Twipe's body is milled from Acetron GP and weighs xxx ounces and required a calculated detent torque of yyy in order to maintain
-its balance in a fixed position. The robot will need to make aaa DMP calculations per second, update the stepper motors bbb times per second,
-and send telemetry data to an operator at a rate of ccc bps over a wifi link.
+8.625" tall. Twipe's body is milled from Acetron GP and weighs about 2312 grams (including the battery) and required a calculated detent torque of 0.073 Kg-m in order to maintain
+its balance in a fixed position. See [Doug's article](https://va3wam.github.io/balancing%20physics/balancing%20math/torque%20math/motor%20torque/Motor-Torque-and-Balancing-Considerations/) for more details regarding calculating torque. The robot will need to make aaa DMP calculations per second, update the stepper motors 10 times per second,and send telemetry data to an operator at a rate of ccc bps over a wifi link.
 
 ## Layer 2: Device Software
 The Twipe robot must read accelerometer and gyroscope data from an inertial measurement unit to determine the robot’s orientation and then 
