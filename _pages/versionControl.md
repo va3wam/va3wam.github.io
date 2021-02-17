@@ -88,3 +88,5 @@ Once your pull request is merged into mater on the remote server you need to cle
 </ul>
 If you want to track a remote branch from a local branch then use the command
 <code>git branch -u upstream/{branch name}</code>
+### Pruning
+If you issue the command ```git branch -a``` and find that you have a bunch of dead local and remote branches listed then you can clean up by issuog the command ```git fetch --prune origin```.   
