@@ -2,7 +2,7 @@
 layout: single
 author_profile: false
 permalink: /versionControl/
-title: "Version Conrol"
+title: "Version Control"
 excerpt: "Instructions on how to use Github to branch, pull, and push content"
 toc: true
 header:
