@@ -25,7 +25,7 @@ dynamically balance the inherently unstable robot.
 ### Main processor
 The processing logic for the robot is provided by an Adafruit Huzzah32 development board which features an Espressif ESP32 System On A Chip 
 (SOC). This processor is responsible for handling the logic to balance the robot as well as to handle all the real-time communication with 
-an operator as required. We have an article that described the [ESP32 SOC in greater detail](/_posts/2021-03-05-SOC-Technology-Stack.md) if you are keen to know more about it.
+an operator as required. We have an article that described the [ESP32 SOC in greater detail](https://va3wam.github.io/soc/technology%20stack/architecture/SOC-Technology-Stack/) if you are keen to know more about it.
 
 ### Motion Sensors
 The robot’s motion tracking is provided by an Invensense MPU6050 inertial measurement unit development board which combine a 3-axis 
