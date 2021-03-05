@@ -1,5 +1,5 @@
 ---
-title: "Twipe Robot Technology Stack"
+title: "Twipe Robot Eco System"
 author: Old Squire
 author_profile: true
 excerpt: "The IoT technology stack used for the Twipe project."
@@ -14,7 +14,7 @@ tags:
   - Architecture
 ---
 The Twipe robot end to end architecture model is based on a five layer [IoT technology stack](https://engineering.eckovation.com/iot-stack/). 
-In this article we will review the high level details of this architecture.
+In this article we will review the high level details of this architecture. ![EcoSystem](/assets/images/architecture.jpeg "Twipe Eco System")
 
 ## Layer 1: Device Hardware
 The robot has a two wheeled inverted pendulum design. It uses a custom PCB to integrate a series of off the shelf development boards to 
