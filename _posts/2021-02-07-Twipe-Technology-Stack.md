@@ -67,7 +67,7 @@ Twipe features a 2.4GHz WiFi radio, a WiFi access point, an MQTT broker and a cl
 The unqiue media access control address of the radio prefixed by 'twipe' is used to uniquely identify each Twipe robot to both the required WiFi Access Point and the MQTT broker. This makes it possible for multipe robots to co-exist in the same network.
 
 ### Data Protocols
-Communication between the robot and the MQTT broker is comprised of MQTT messaging encapsulated in IPv4 packets. Communication between the MQTT broker and the web browser client is comprised of MQTT messages tunneled through a websocket connection.  
+Communication between the robot and the MQTT broker is comprised of MQTT messaging on port 1883 encapsulated in IPv4 packets over a 2.4GHz 802.11n WiFi connection at 150Mbps. Communication between the MQTT broker and the web browser client is comprised of MQTT messages on port 1883 tunneled through a websocket connection on port 9001 encapsulated in IPv4 packets over whatever speed the local Access Point supports.  
 
 ### Device Management
 Monitoring and dynamic configuration of the robot is done via MQTT messages between the web browser client and the robot. While not yet implemented the plan is to include Over-The-Air (OTA) for coe updates. Today code updates are done via a local USB micro conection.
