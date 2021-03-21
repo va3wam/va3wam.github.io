@@ -69,8 +69,8 @@ Now start coding. A best practice for naming a branch is either an issue number 
   <li>The file moves up to the Staged Changes heading. Repeat this for all files that get the same commit message.</li>
   <li>Type in an explanation of what you did to the file. in the Messag text box.</li>
   <li>Click the checkmark icon to check in the staged file(s)</li>
-  <li>Click the elipse tool then from the drop down menu select push. This commits thhe changes.</li>
-  <li>Repeat this process until all of the filles have been staged and committed with comments.</li>
+  <li>Click the elipse tool then from the drop down menu select push. This commits the changes.</li>
+  <li>Repeat this process until all of the files have been staged and committed with comments.</li>
 </ul>
 
 ### Pull Request
