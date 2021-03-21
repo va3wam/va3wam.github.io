@@ -64,12 +64,14 @@ Now start coding. A best practice for naming a branch is either an issue number 
 
 ### Commit
 <a href="https://git-scm.com/docs/git-commit">Committing</a> does not affect the local Master (assuming that you branched as described above) nor the remote repository at all. It is a best practice to make commits often. This will create a nice set of comments for all the work being done. These comments will carry forward to your pull request. <code>git commit -a -m "{put message here}"</code>. Alternatively, we recomendusing the <a href="https://code.visualstudio.com/Docs/editor/versioncontrol#_git-support">Source Control Tool</a> in Visual Studio Code to do your commits. When you have files that have changed they are listed under the Chnages heading. Each line has a + icon used to stage the file. 
+<ul>
   <li>Click the + (stage) icon beside the file you wish to stage.</li>
   <li>The file moves up to the Staged Changes heading. Repeat this for all files that get the same commit message.</li>
   <li>Type in an explanation of what you did to the file. in the Messag text box.</li>
   <li>Click the checkmark icon to check in the staged file(s)</li>
   <li>Click the elipse tool then from the drop down menu select push. This commits thhe changes.</li>
   <li>Repeat this process until all of the filles have been staged and committed with comments.</li>
+</ul>
 
 ### Pull Request
 We use pull requests to merge branches with master. To make the pull/merge go smoothly you must first ensure that your branch is synchronized with master. Here is how to do that:
