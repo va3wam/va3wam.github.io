@@ -99,3 +99,61 @@ If you want to track a remote branch from a local branch then use the command
 
 ### Pruning
 If you issue the command ```git branch -a``` and find that you have a bunch of dead local and remote branches listed then you can clean up by issuog the command ```git fetch --prune origin```.   
+
+# Refernce Repo Structures
+This section shows how we like to set up repositories based on what programming language is used.
+
+## Arduino/PlatformIO
+
+```
+.git
+.pio
+.vscode
+.gitignore
++--src
++--lib
++--docs
++--math
++--physicalDesign
+   +--fusionExports
+   +--otherDesignInfo
++--pcb
+   +--fusionExports
+   +--otherCircuitryInfo
++--aaAdmin
+   +--platformioAdmin
+   +--repoAdmin
++--.github
+   +--workflows
++--performance
+   +--mqttScripts
+   +--testData
+   +--testingMethods
+CODE_OF_CONDUCT
+contributing.md
+readme.md
+ ```
+
+## DotNet & C#
+
+```
+.git
+.vscode
+.gitignore
++--src
++--lib
++--docs
++--math
++--aaAdmin
+   +--platformioAdmin
+   +--repoAdmin
++--.github
+   +--workflows
++--performance
+   +--mqttScripts
+   +--testData
+   +--testingMethods
+CODE_OF_CONDUCT
+contributing.md
+readme.md
+ ```
